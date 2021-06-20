@@ -23,7 +23,7 @@ def send_email(receiver, subject, message):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
     # Make sure to give app access in your Google account
-    server.login("prasannarajraj20799@gmail.com",'pra1san2na3')
+    server.login("here enter your mail address",'enter your mail password')
     email = EmailMessage()
     email['From'] = 'Sender_Email'
     email['To'] = receiver
@@ -143,12 +143,12 @@ if a==1:
                     speak(f"Sir, the year is {strTime}")
 
                 elif 'email to' in query:
-                    email_list = {'first mail':"k.prasanna08092002@gmail.com",'second mail':"e.thulasirajan@gmail.com"}
+                    email_list = {'first mail':"enter someone mail ID",'second mail':"enter someone mail ID"}
                     speak("ok sir     to whom you want to sent the email")
                     print("for prasanna say,,,,,,,,,,,,,,first mail")
-                    speak("for,,,,,,,,,,,,,,,, prasanna,,,,,,,,,,,say,,,,,,,,,,first mail ,,,,,,,,,,,,,,")
+                    speak("for,,,,,,,,,,,,,,,, enter name of the person,,,,,,,,,,,say,,,,,,,,,,first mail ,,,,,,,,,,,,,,")
                     print("for thulasi rajan say,,,,,,,,second mail")
-                    speak("for,,,,,,,,,,,,,, thulasi rajan ,,,,,,,,,,,say,,,,,,,,second mail,,,,,,,,,,,or")
+                    speak("for,,,,,,,,,,,,,, enter name of the person ,,,,,,,,,,,say,,,,,,,,second mail,,,,,,,,,,,or")
                     print('no one')
                     speak('no one')
                     name = takeCommand().lower()
